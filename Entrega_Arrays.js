@@ -59,12 +59,68 @@ console.log(divMatrix);
 // - `secretName(['Harry', 'Ron', 'Hermione'])` should return `'HRH'`.
 
 const secretNames = ["Esperanza", "Franco", "Nia"];
-const secretSociety = '';
+let secretSociety = '';
 
-for (let i = 0; i < secretNames; i++){
+for (let i = 0; i < secretNames.length; i++){
 
-    divMatrix[i] += divNumero;
+   let primeraLetra = secretNames[i][0];
+    secretSociety += primeraLetra;
 }
+
+console.log(secretSociety)
+
+// Online status
+ 
+
+// Display online status for a list of users.
+ 
+
+// Example:
+// - `onlineStatus(['mockIng99', 'J0eyPunch', 'glassedFer'])` should return `'mockIng99, J0eyPunch and 1 more online'`.
+
+const onlineUsers = ['mockIng99', 'J0eyPunch', 'glassedFer'];
+
+let onlineStatus = '';
+let otherUsers = onlineUsers.length - 2;
+
+for (let i = 0; i < 2; i++){
+    
+    onlineStatus += `${onlineUsers[i]}, `;
+} 
+
+console.log(`${onlineStatus}and ${otherUsers} more online`);
+
+// Array of Multiples
+ 
+
+// Create a function that takes two parameters (number, length) and returns an array of length containing multiples of the number.
+ 
+// Examples:
+// - `arrayMultiplos(2, 10)` should return `[2, 4, 6, 8, 10, 12, 14, 16, 18, 20]`.
+// - `arrayMultiplos(17, 6)` should return `[17, 34, 51, 68, 85, 102]`.
+
+let numMultiplos = [17, 6];
+let primerMultiplo = numMultiplos[0];
+let segundoMultiplo = numMultiplos[1];
+let arrayMultiplos = [];
+
+
+for (let i = 1; i <= segundoMultiplo; i++){
+
+    arrayMultiplos.push(primerMultiplo * i);
+}
+console.log(arrayMultiplos);
+
+
+// Positive dominance in Array
+ 
+
+// Write a function to determine if an array is positively dominant.
+// An array is positively dominant when the majority of its elements are positive.
+ 
+
+// Example:
+// - `positiveDom([-1, -3, -5, 4, 6767])` should return `false`.
 
 
 
